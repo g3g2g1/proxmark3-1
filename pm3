@@ -1,4 +1,2 @@
 
-    CLIENT="/home/md/proxmark3/client/proxmark3"
-
-CLIENT /dev/ttyS3
+/home/md/proxmark3/client/proxmark3 /dev/ttyS3
