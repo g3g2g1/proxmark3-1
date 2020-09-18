@@ -13,16 +13,9 @@ FINDBTDIRECT=true
 PM3PATH=$(dirname "$0")
 FULLIMAGE="fullimage.elf"
 BOOTIMAGE="bootrom.elf"
-# try pm3 dirs in current repo workdir
-if [ -d "$PM3PATH/client/" ]; then
-    CLIENT="$PM3PATH/client/proxmark3"
-# try install dir
-elif [ -x "$PM3PATH/proxmark3" ]; then
-    CLIENT="$PM3PATH/proxmark3"
-else
-# hope it's installed somehow, still not sure where fw images are...
-    CLIENT="proxmark3"
-fi
+
+    CLIENT="/home/md/proxmark3/client/proxmark3"
+
 
 PM3LIST=()
 SHOWLIST=false
